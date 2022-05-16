@@ -601,7 +601,7 @@
                                         <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                                             <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
                                                 <!-- Render each sublink -->
-                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Carpet cleaning&#x27;, &#x27;href&#x27;: &#x27;gallery-Carpet-cleaning&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Tile cleaning&#x27;, &#x27;href&#x27;: &#x27;gallery-Tile-cleaning&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
+                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Carpet cleaning&#x27;, &#x27;href&#x27;: &#x27;gallery-Carpet-cleaning&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Tile cleaning&#x27;, &#x27;href&#x27;: &#x27;gallery-Tile-cleaning&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Other Cleaning&#x27;, &#x27;href&#x27;: &#x27;gallery-Other-Cleaning&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
                                                   
                                                     <a
                                                         href=" gallery-Carpet-cleaning "
@@ -621,6 +621,17 @@
                                                     >
                                                         <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                         <p class="mt-1 text-sm text-gray-500">Tile cleaning</p>
+                                                    </a>
+                                                <!-- </each> -->
+                                               <!--  -->
+                                                 
+                                                    <a
+                                                        href=" gallery-Other-Cleaning "
+                                                        role="menuitem"
+                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
+                                                    >
+                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                        <p class="mt-1 text-sm text-gray-500">Other Cleaning</p>
                                                     </a>
                                                 <!-- </each> -->
                                                <!--  -->
@@ -924,6 +935,12 @@
                                                 </a>
                                             <!-- </each> -->
                                             
+                                                <a href="gallery-Other-Cleaning" role="menuitem" class="block p-3 -m-3 transition rounded-md">
+                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                    <p class="mt-1 text-sm text-gray-500">Other Cleaning</p>
+                                                </a>
+                                            <!-- </each> -->
+                                            
                                                 <a href="gallery-All" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <!-- <p class="text-base font-medium text-gray-900">All Photos</p> -->
                                                     <p class="mt-1 text-sm text-gray-500">All Photos</p>
@@ -1047,7 +1064,7 @@
 <div
     x-data="{
         activeImage: 0,
-        amountOfImages: 14,
+        amountOfImages: 18,
         next() {
             if (this.activeImage < this.amountOfImages - 1)
                 this.activeImage ++;
@@ -1089,11 +1106,11 @@
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 1; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b6b3e445-ad87-493d-87dc-3f797c407cb6.png" alt="" /> -->
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/08b72096-6164-47f2-bb77-b0c618ff102a.png" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/b6b3e445-ad87-493d-87dc-3f797c407cb6.png" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b6b3e445-ad87-493d-87dc-3f797c407cb6.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/b6b3e445-ad87-493d-87dc-3f797c407cb6.png" alt="" /> -->
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/08b72096-6164-47f2-bb77-b0c618ff102a.png" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/08b72096-6164-47f2-bb77-b0c618ff102a.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/08b72096-6164-47f2-bb77-b0c618ff102a.png" alt="" /> -->
                             
                         </div>
 
@@ -1109,27 +1126,6 @@
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 2; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/2f119570-2b89-46d6-ba17-d4b3dc9cb9ea.png" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/2f119570-2b89-46d6-ba17-d4b3dc9cb9ea.png" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/2f119570-2b89-46d6-ba17-d4b3dc9cb9ea.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/2f119570-2b89-46d6-ba17-d4b3dc9cb9ea.png" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 3; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/397ede9f-250f-43ef-a493-fea0babb3dc3.png" alt="" /> -->
                              
@@ -1150,49 +1146,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 4; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e4805c1f-6fca-4e50-ba5b-358da5260535.png" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/e4805c1f-6fca-4e50-ba5b-358da5260535.png" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e4805c1f-6fca-4e50-ba5b-358da5260535.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/e4805c1f-6fca-4e50-ba5b-358da5260535.png" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 5; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/08b72096-6164-47f2-bb77-b0c618ff102a.png" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/08b72096-6164-47f2-bb77-b0c618ff102a.png" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/08b72096-6164-47f2-bb77-b0c618ff102a.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/08b72096-6164-47f2-bb77-b0c618ff102a.png" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 6; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 3; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/cd61a8e0-fcca-4c84-ad7d-e9206c129bae.jpeg" alt="" /> -->
                              
@@ -1213,7 +1167,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 7; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 4; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/17d20e36-d881-4347-be08-f29e66fca3e7.jpeg" alt="" /> -->
                              
@@ -1234,28 +1188,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 8; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/31cd3fd8-7fdc-4f65-89b4-40b56b91f6e9.jpeg" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/31cd3fd8-7fdc-4f65-89b4-40b56b91f6e9.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/31cd3fd8-7fdc-4f65-89b4-40b56b91f6e9.jpeg" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/31cd3fd8-7fdc-4f65-89b4-40b56b91f6e9.jpeg" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 9; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 5; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b8347d3d-f31f-4620-9aa7-17cd665b781b.jpeg" alt="" /> -->
                              
@@ -1276,7 +1209,28 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 10; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 6; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/31cd3fd8-7fdc-4f65-89b4-40b56b91f6e9.jpeg" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/31cd3fd8-7fdc-4f65-89b4-40b56b91f6e9.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/31cd3fd8-7fdc-4f65-89b4-40b56b91f6e9.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/31cd3fd8-7fdc-4f65-89b4-40b56b91f6e9.jpeg" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 7; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/28c9b716-a533-406b-a37c-db033567b90e.jpeg" alt="" /> -->
                              
@@ -1297,7 +1251,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 11; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 8; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/6fef733b-1f08-4446-8963-87ae49514160.jpeg" alt="" /> -->
                              
@@ -1318,7 +1272,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 12; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 9; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/733496fc-f58d-4132-93bb-8a98046829bd.jpeg" alt="" /> -->
                              
@@ -1339,13 +1293,160 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 13; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 10; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5bf63580-d6ac-480f-ad8b-56c217333fb5.jpeg" alt="" /> -->
                              
                                 <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/5bf63580-d6ac-480f-ad8b-56c217333fb5.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5bf63580-d6ac-480f-ad8b-56c217333fb5.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/5bf63580-d6ac-480f-ad8b-56c217333fb5.jpeg" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 11; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/0b2fdfe0-699c-4d93-b795-39ff670a2642.jpeg" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/0b2fdfe0-699c-4d93-b795-39ff670a2642.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/0b2fdfe0-699c-4d93-b795-39ff670a2642.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/0b2fdfe0-699c-4d93-b795-39ff670a2642.jpeg" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 12; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/dbd86406-1e51-4b7f-84f3-b903926bc64d.jpeg" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/dbd86406-1e51-4b7f-84f3-b903926bc64d.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/dbd86406-1e51-4b7f-84f3-b903926bc64d.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/dbd86406-1e51-4b7f-84f3-b903926bc64d.jpeg" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 13; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/2e59b15b-c076-4cc7-ac0d-94c8d06ab226.jpeg" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/2e59b15b-c076-4cc7-ac0d-94c8d06ab226.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/2e59b15b-c076-4cc7-ac0d-94c8d06ab226.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/2e59b15b-c076-4cc7-ac0d-94c8d06ab226.jpeg" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 14; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/53166250-3e2c-4bae-97f4-f12274c8d49e.jpeg" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/53166250-3e2c-4bae-97f4-f12274c8d49e.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/53166250-3e2c-4bae-97f4-f12274c8d49e.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/53166250-3e2c-4bae-97f4-f12274c8d49e.jpeg" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 15; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/bfa48ae0-eba5-4f9d-b0d4-9f59f6736ed8.jpeg" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/bfa48ae0-eba5-4f9d-b0d4-9f59f6736ed8.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/bfa48ae0-eba5-4f9d-b0d4-9f59f6736ed8.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/bfa48ae0-eba5-4f9d-b0d4-9f59f6736ed8.jpeg" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 16; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/1748ce8b-fcd8-493f-9b67-7d817deba51a.jpeg" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/1748ce8b-fcd8-493f-9b67-7d817deba51a.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/1748ce8b-fcd8-493f-9b67-7d817deba51a.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/1748ce8b-fcd8-493f-9b67-7d817deba51a.jpeg" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 17; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ffd1d0b0-c52a-40aa-be14-4373574ab090.jpeg" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/ffd1d0b0-c52a-40aa-be14-4373574ab090.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ffd1d0b0-c52a-40aa-be14-4373574ab090.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/ffd1d0b0-c52a-40aa-be14-4373574ab090.jpeg" alt="" /> -->
                             
                         </div>
 
@@ -1416,7 +1517,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 1">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b6b3e445-ad87-493d-87dc-3f797c407cb6.png" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/08b72096-6164-47f2-bb77-b0c618ff102a.png" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1424,7 +1525,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 2">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/2f119570-2b89-46d6-ba17-d4b3dc9cb9ea.png" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/397ede9f-250f-43ef-a493-fea0babb3dc3.png" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1432,7 +1533,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 3">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/397ede9f-250f-43ef-a493-fea0babb3dc3.png" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/cd61a8e0-fcca-4c84-ad7d-e9206c129bae.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1440,7 +1541,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 4">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e4805c1f-6fca-4e50-ba5b-358da5260535.png" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/17d20e36-d881-4347-be08-f29e66fca3e7.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1448,7 +1549,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 5">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/08b72096-6164-47f2-bb77-b0c618ff102a.png" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b8347d3d-f31f-4620-9aa7-17cd665b781b.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1456,7 +1557,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 6">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/cd61a8e0-fcca-4c84-ad7d-e9206c129bae.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/31cd3fd8-7fdc-4f65-89b4-40b56b91f6e9.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1464,7 +1565,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 7">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/17d20e36-d881-4347-be08-f29e66fca3e7.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/28c9b716-a533-406b-a37c-db033567b90e.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1472,7 +1573,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 8">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/31cd3fd8-7fdc-4f65-89b4-40b56b91f6e9.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/6fef733b-1f08-4446-8963-87ae49514160.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1480,7 +1581,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 9">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b8347d3d-f31f-4620-9aa7-17cd665b781b.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/733496fc-f58d-4132-93bb-8a98046829bd.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1488,7 +1589,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 10">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/28c9b716-a533-406b-a37c-db033567b90e.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5bf63580-d6ac-480f-ad8b-56c217333fb5.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1496,7 +1597,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 11">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/6fef733b-1f08-4446-8963-87ae49514160.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/0b2fdfe0-699c-4d93-b795-39ff670a2642.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1504,7 +1605,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 12">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/733496fc-f58d-4132-93bb-8a98046829bd.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/dbd86406-1e51-4b7f-84f3-b903926bc64d.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1512,7 +1613,39 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 13">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5bf63580-d6ac-480f-ad8b-56c217333fb5.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/2e59b15b-c076-4cc7-ac0d-94c8d06ab226.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    </li>
+                                
+                                    <!-- Transition Wrapper 1 -->
+                                    <li class="flex flex-col" x-show="activeImage === 14">
+                                            
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/53166250-3e2c-4bae-97f4-f12274c8d49e.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    </li>
+                                
+                                    <!-- Transition Wrapper 1 -->
+                                    <li class="flex flex-col" x-show="activeImage === 15">
+                                            
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/bfa48ae0-eba5-4f9d-b0d4-9f59f6736ed8.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    </li>
+                                
+                                    <!-- Transition Wrapper 1 -->
+                                    <li class="flex flex-col" x-show="activeImage === 16">
+                                            
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/1748ce8b-fcd8-493f-9b67-7d817deba51a.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    </li>
+                                
+                                    <!-- Transition Wrapper 1 -->
+                                    <li class="flex flex-col" x-show="activeImage === 17">
+                                            
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ffd1d0b0-c52a-40aa-be14-4373574ab090.jpeg" alt="Carpet cleaning for Superstition Carpet and Tile Care LLC in Apache Junction, AZ" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1536,6 +1669,8 @@
         </div>
     </div>
 </section>
+
+
 
 
 
@@ -1973,68 +2108,68 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-149553"
-                                                    name="149553"
+                                                    id="contact-service-210434"
+                                                    name="210434"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Carpet Cleaning"
                                             />
-                                            <label for="contact-label-service-149553" class="ml-3 text-sm font-medium text-gray-700">Carpet Cleaning</label>
+                                            <label for="contact-label-service-210434" class="ml-3 text-sm font-medium text-gray-700">Carpet Cleaning</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-149554"
-                                                    name="149554"
+                                                    id="contact-service-210435"
+                                                    name="210435"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Tile and Grout Cleaning"
                                             />
-                                            <label for="contact-label-service-149554" class="ml-3 text-sm font-medium text-gray-700">Tile and Grout Cleaning</label>
+                                            <label for="contact-label-service-210435" class="ml-3 text-sm font-medium text-gray-700">Tile and Grout Cleaning</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-149555"
-                                                    name="149555"
+                                                    id="contact-service-210436"
+                                                    name="210436"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Carpet Repairs"
                                             />
-                                            <label for="contact-label-service-149555" class="ml-3 text-sm font-medium text-gray-700">Carpet Repairs</label>
+                                            <label for="contact-label-service-210436" class="ml-3 text-sm font-medium text-gray-700">Carpet Repairs</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-149556"
-                                                    name="149556"
+                                                    id="contact-service-210437"
+                                                    name="210437"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Upholstery Cleaning"
                                             />
-                                            <label for="contact-label-service-149556" class="ml-3 text-sm font-medium text-gray-700">Upholstery Cleaning</label>
+                                            <label for="contact-label-service-210437" class="ml-3 text-sm font-medium text-gray-700">Upholstery Cleaning</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-149557"
-                                                    name="149557"
+                                                    id="contact-service-210438"
+                                                    name="210438"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Pet Urine and Odor Removal"
                                             />
-                                            <label for="contact-label-service-149557" class="ml-3 text-sm font-medium text-gray-700">Pet Urine and Odor Removal</label>
+                                            <label for="contact-label-service-210438" class="ml-3 text-sm font-medium text-gray-700">Pet Urine and Odor Removal</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-149558"
-                                                    name="149558"
+                                                    id="contact-service-210439"
+                                                    name="210439"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="24 Hour Flood Extraction"
                                             />
-                                            <label for="contact-label-service-149558" class="ml-3 text-sm font-medium text-gray-700">24 Hour Flood Extraction</label>
+                                            <label for="contact-label-service-210439" class="ml-3 text-sm font-medium text-gray-700">24 Hour Flood Extraction</label>
                                         </div>
                                         
                                     </div>
@@ -2065,68 +2200,68 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-149553"
-                                                    name="149553"
+                                                    id="contact-service-210434"
+                                                    name="210434"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Carpet Cleaning"
                                             />
-                                            <label for="contact-label-service-149553" class="ml-3 text-sm font-medium text-gray-700">Carpet Cleaning</label>
+                                            <label for="contact-label-service-210434" class="ml-3 text-sm font-medium text-gray-700">Carpet Cleaning</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-149554"
-                                                    name="149554"
+                                                    id="contact-service-210435"
+                                                    name="210435"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Tile and Grout Cleaning"
                                             />
-                                            <label for="contact-label-service-149554" class="ml-3 text-sm font-medium text-gray-700">Tile and Grout Cleaning</label>
+                                            <label for="contact-label-service-210435" class="ml-3 text-sm font-medium text-gray-700">Tile and Grout Cleaning</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-149555"
-                                                    name="149555"
+                                                    id="contact-service-210436"
+                                                    name="210436"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Carpet Repairs"
                                             />
-                                            <label for="contact-label-service-149555" class="ml-3 text-sm font-medium text-gray-700">Carpet Repairs</label>
+                                            <label for="contact-label-service-210436" class="ml-3 text-sm font-medium text-gray-700">Carpet Repairs</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-149556"
-                                                    name="149556"
+                                                    id="contact-service-210437"
+                                                    name="210437"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Upholstery Cleaning"
                                             />
-                                            <label for="contact-label-service-149556" class="ml-3 text-sm font-medium text-gray-700">Upholstery Cleaning</label>
+                                            <label for="contact-label-service-210437" class="ml-3 text-sm font-medium text-gray-700">Upholstery Cleaning</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-149557"
-                                                    name="149557"
+                                                    id="contact-service-210438"
+                                                    name="210438"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Pet Urine and Odor Removal"
                                             />
-                                            <label for="contact-label-service-149557" class="ml-3 text-sm font-medium text-gray-700">Pet Urine and Odor Removal</label>
+                                            <label for="contact-label-service-210438" class="ml-3 text-sm font-medium text-gray-700">Pet Urine and Odor Removal</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-149558"
-                                                    name="149558"
+                                                    id="contact-service-210439"
+                                                    name="210439"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="24 Hour Flood Extraction"
                                             />
-                                            <label for="contact-label-service-149558" class="ml-3 text-sm font-medium text-gray-700">24 Hour Flood Extraction</label>
+                                            <label for="contact-label-service-210439" class="ml-3 text-sm font-medium text-gray-700">24 Hour Flood Extraction</label>
                                         </div>
                                         
                                     </div>
